@@ -775,7 +775,7 @@ int player_intersects_block(
     int nz = roundf(z);
     for (int i = 0; i < height; i++) {
         if (nx == hx && ny - i == hy && nz == hz) {
-            return 1;
+            //return 1;
         }
     }
     return 0;
