@@ -2474,7 +2474,6 @@ void handle_movement(double dt) {
     int step = MAX(8, estimate);
     float ut = dt / step;
     vx = vx * ut * speed;
-	//printf("ut:%f, dt:%f, step:%d, vx:%f\n", ut, dt, step, vx);
     vy = vy * ut * speed;
     vz = vz * ut * speed;
     for (int i = 0; i < step; i++) {
@@ -2489,7 +2488,6 @@ void handle_movement(double dt) {
         s->y += vy + dy * ut;
         s->z += vz;
         if (collide(2, &s->x, &s->y, &s->z)) {
-	//printf("collide\n");
             dy = 0;
         }
     }
