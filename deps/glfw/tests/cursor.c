@@ -32,6 +32,10 @@
 
 #include <glad/glad.h>
 
+#ifndef M_PI
+    #define M_PI 3.14159265358979323846
+#endif
+
 #if defined(_MSC_VER)
  // Make MS math.h define M_PI
  #define _USE_MATH_DEFINES
