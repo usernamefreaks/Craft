@@ -713,48 +713,48 @@ int collide(int height, float *x, float *y, float *z) {
     float pz = *z - nz;
     float pad = 0.25;
     for (int dy = 0; dy < height; dy++) {
-        if (px < -pad && is_obstacle(map_get(map, nx - 1, ny - dy, nz))) {//px < -pad && 
+        if (px < -pad && is_obstacle(map_get(map, nx - 1, ny - dy, nz))) {
             *x = nx - pad;
         }
-        if (px > pad && is_obstacle(map_get(map, nx + 1, ny - dy, nz))) {//px > pad && 
+        if (px > pad && is_obstacle(map_get(map, nx + 1, ny - dy, nz))) {
             *x = nx + pad;
         }
-        if (py < -pad && is_obstacle(map_get(map, nx, ny - dy - 1, nz))) {//py < -pad && 
+        if (py < -pad && is_obstacle(map_get(map, nx, ny - dy - 1, nz))) {
             *y = ny - pad;
             result = 1;
         }
-        if (py > pad && is_obstacle(map_get(map, nx, ny - dy + 1, nz))) {//py > pad && 
+        if (py > pad && is_obstacle(map_get(map, nx, ny - dy + 1, nz))) {
             *y = ny + pad;
             result = 1;
         }
-        if (pz < -pad && is_obstacle(map_get(map, nx, ny - dy, nz - 1))) {//pz < -pad && 
+        if (pz < -pad && is_obstacle(map_get(map, nx, ny - dy, nz - 1))) {
             *z = nz - pad;
         }
-        if (pz > pad && is_obstacle(map_get(map, nx, ny - dy, nz + 1))) {//pz > pad && 
+        if (pz > pad && is_obstacle(map_get(map, nx, ny - dy, nz + 1))) {
             *z = nz + pad;
         }
-        if (px < -pad && pz > pad && is_obstacle(map_get(map, nx - 1, ny - dy, nz + 1))) {//px < -pad && 
+        if (px < -pad && pz > pad && is_obstacle(map_get(map, nx - 1, ny - dy, nz + 1))) {
             if(ABS(px) < ABS(pz)){
 		        *x = nx - pad;
             } else {
 	            *z = nz + pad;
             }
         }
-        if (px > pad && pz > pad && is_obstacle(map_get(map, nx + 1, ny - dy, nz + 1))) {//px > pad && 
+        if (px > pad && pz > pad && is_obstacle(map_get(map, nx + 1, ny - dy, nz + 1))) {
             if(ABS(px) < ABS(pz)){            
-                *x = nx + pad;//revert x dir and go z dir
+                *x = nx + pad;
             } else {
 	            *z = nz + pad;
             }
         }
-	    if (px < -pad && pz < -pad && is_obstacle(map_get(map, nx - 1, ny - dy, nz - 1))) {//px < -pad && 
+	    if (px < -pad && pz < -pad && is_obstacle(map_get(map, nx - 1, ny - dy, nz - 1))) {
             if(ABS(px) < ABS(pz)){ 
                 *x = nx - pad;
             } else {
 	            *z = nz - pad;
             }
         }
-        if (px > pad && pz < -pad && is_obstacle(map_get(map, nx + 1, ny - dy, nz - 1))) {//px > pad && 
+        if (px > pad && pz < -pad && is_obstacle(map_get(map, nx + 1, ny - dy, nz - 1))) {
             if(ABS(px) < ABS(pz)){             
                 *x = nx + pad;
             } else {
