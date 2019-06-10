@@ -660,7 +660,7 @@ int hit_test(
             }
         }
     }
-    return result;
+    return 0;
 }
 
 int hit_test_face(Player *player, int *x, int *y, int *z, int *face) {
