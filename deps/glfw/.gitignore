@@ -25,6 +25,9 @@ src/config.h
 src/glfw3.pc
 src/glfwConfig.cmake
 src/glfwConfigVersion.cmake
+src/glfw3Config.cmake
+src/glfw3ConfigVersion.cmake
+src/glfw_config.h
 
 # Compiled binaries
 src/libglfw.so
@@ -44,6 +47,7 @@ examples/*.exe
 examples/boing
 examples/gears
 examples/heightmap
+examples/particles
 examples/splitview
 examples/simple
 examples/wave
@@ -51,19 +55,25 @@ tests/*.app
 tests/*.exe
 tests/accuracy
 tests/clipboard
+tests/cursor
 tests/defaults
+tests/empty
 tests/events
 tests/fsaa
 tests/gamma
 tests/glfwinfo
+tests/icon
 tests/iconify
 tests/joysticks
 tests/modes
+tests/monitors
+tests/msaa
 tests/peter
 tests/reopen
 tests/sharing
 tests/tearing
 tests/threads
+tests/timeout
 tests/title
 tests/version
 tests/windows
