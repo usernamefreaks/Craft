@@ -2,7 +2,7 @@
 
 This is a debug exercise based on the fogleman/Craft github repo. This means that several bugs have intentionally been introduced into the codebase. If you want the original, untempered Minecraft game codebase, https://github.com/fogleman/Craft is where you want to go.
 
-## Read "README (original).md"!
+## Go Read "README (original).md"!
 
 The "README (original).md" file is written by the original developers of the game. It contains an overview of the game, build instructions, and other useful info! You really should go read it!
 
