@@ -14,6 +14,7 @@ add_executable(
     deps/tinycthread/tinycthread.c)
 
 add_definitions(-std=c99 -O3)
+set(CMAKE_C_FLAGS "-g")
 
 add_subdirectory(deps/glfw)
 include_directories(deps/glew/include)
