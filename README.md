@@ -10,4 +10,4 @@ The "README (original).md" file is written by the original developers of the gam
 
 1. Unable to place or delete any blocks.
 2. It shouldn't be possible to place blocks where the player is standing. (Need #1 fixed first).
-3. When the player walks by an outward pointing corner of a block, the player seems to be temporarily "glued" to the block. The movement should be smooth.
+3. When the player walks next to other blocks, the player can get "glued" to the block.
